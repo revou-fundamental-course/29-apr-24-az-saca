@@ -1,1 +1,210 @@
 /* css styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  /* padding: 10px; */
+  display: flex;
+  position: sticky;
+  top: 0;
+  /* justify-content: flex-end; */
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  /* align-self: flex-end; */
+  /* justify-content: flex-end; */
+  text-decoration: none;
+  align-self: flex-end;
+  /* justify-content: flex-end; */
+  /* align-items: center; */
+  /* padding: 0;
+  margin: 0; */
+}
+
+nav ul li{
+  margin: 5px;
+  display: flex;
+  /* justify-content: flex-end;   */
+  align-self: flex-end;
+}
+
+nav a{
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+  /* justify-content: flex-end; */
+}
+
+nav a:hover{
+  color: #f7cac9;
+  /* font-weight: bold; */
+}
+
+.slideshow{
+  object-fit: cover;
+  width: 100%;
+  height: 530px;
+  /* width: 100%; */
+}
+
+.img-slide button { 
+    height: 50px; 
+    width: 50px; 
+    text-align: center;
+    font-size: large; 
+    line-height: 50px; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%);
+    border: white 1px solid;
+    opacity: 0.5;  
+} 
+  
+.img-slide button:first-child { 
+    left: 10px; 
+  
+} 
+  
+.img-slide button:last-child { 
+    right: 10px; 
+  
+}
+
+main{
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.introduce{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f7cac9;
+}
+
+.recommend{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f7cac9;
+}
+
+.wrapper { 
+    width: 100%; 
+    position: relative; 
+  
+} 
+  
+.wrapper i { 
+    height: 50px; 
+    width: 50px; 
+    background: rgb(255, 255, 255); 
+    text-align: center; 
+    line-height: 50px; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%);  
+} 
+  
+.wrapper i:first-child { 
+    left: -10px; 
+  
+} 
+  
+.wrapper i:last-child { 
+    right: -10px; 
+  
+} 
+  
+.wrapper .carousel { 
+    display: grid; 
+    grid-auto-flow: column; 
+    gap: 16px; 
+    overflow-x: auto; 
+    scroll-behavior: smooth; 
+    scrollbar-width: 0; 
+} 
+  
+.carousel::-webkit-scrollbar { 
+    display: none; 
+} 
+  
+.carousel .card { 
+    height: 340px; 
+    list-style: none; 
+    background: #fff; 
+    border-radius: 8px; 
+    display: flex; 
+    width: 340px; 
+    padding-bottom: 15px; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+} 
+
+.card .img img { 
+    height: 200px;
+    width: 300px;
+    object-fit: fill;
+} 
+  
+.card h2 { 
+    font-weight: 500; 
+    font-size: 1.56rem; 
+    margin: 30px 0 5px; 
+} 
+  
+.card span { 
+    color: #6a6d78; 
+    font-size: 1.31rem; 
+  
+}
+
+footer{
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  display: flex;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+  
+@media screen and (max-width: 900px) { 
+    .wrapper .carousel { 
+        grid-auto-columns: calc((100% / 2) - 9px); 
+
+    } 
+} 
+  
+@media screen and (max-width: 600px) { 
+    .wrapper .carousel { 
+        grid-auto-columns: 100%; 
+  
+    } 
+}
