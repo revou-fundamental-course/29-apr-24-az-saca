@@ -355,9 +355,28 @@ input[type="reset"]:hover{
     flex-direction: column;
   }
 
+  .form-registration{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  table{
+    width: 100%;
+    display: flex;
+  }
+
+  table tr{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
   .address,
   .sosmed,
   .form-registration {
     margin-bottom: 20px;
   }
+
+  .foot-note{width: 100%;}
 }
